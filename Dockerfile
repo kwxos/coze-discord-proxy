@@ -32,4 +32,4 @@ EXPOSE 7077
 # 工作目录
 WORKDIR /app/coze-discord-proxy/data
 # 设置入口命令
-ENTRYPOINT ["/coze-discord-proxy"]
+ENTRYPOINT ["/main"]
