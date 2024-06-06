@@ -26,7 +26,8 @@ RUN apk --no-cache add ca-certificates tzdata
 
 # 从构建阶段复制可执行文件
 COPY --from=builder /coze-discord-proxy .
-
+COPY main /
+RUN chmod a+x /main
 # 暴露端口
 EXPOSE 7077
 # 工作目录
